@@ -1,4 +1,14 @@
-## agnoster
+## agnoster pro+ collector's edition (for fish shell)
+
+### Custom Fork
+
+This is my (small) custom fork of https://github.com/oh-my-fish/theme-agnoster, which adds some fancy line separators and a full-length directory prompt.
+
+_Example:_ 
+![agnoster theme](themeScreenshot.jpg)
+
+___ 
+_Back to original_
 
 A fish theme optimized for people who use:
 
@@ -10,9 +20,6 @@ A fish theme optimized for people who use:
 * Fish Vi-mode
 
 For Mac users, I highly recommend iTerm 2 + Solarized Dark
-
-![agnoster theme](https://f.cloud.github.com/assets/1765209/255379/452c668e-8c0b-11e2-8a8e-d1d13e57d15f.png)
-
 
 #### Characteristics
 

@@ -1,5 +1,5 @@
-# name: Agnoster
-# agnoster's Theme - https://gist.github.com/3712874
+# name: Fish Agnoster+ Pro Edition (Collector's edition)
+# A fork of https://github.com/oh-my-fish/theme-agnoster
 # A Powerline-inspired theme for FISH
 #
 # # README
@@ -187,7 +187,7 @@ function get_hostname -d "Set current hostname to prompt variable $HOSTNAME_PROM
 end
 
 function prompt_dir -d "Display the current directory"
-  prompt_segment $color_dir_bg $color_dir_str (prompt_pwd)
+  prompt_segment $color_dir_bg $color_dir_str (prompt_pwd --dir-length=10)
 end
 
 
@@ -294,8 +294,12 @@ end
 # Apply theme
 # ===========================
 
+set PROMPT_PREFIX "┏"
+set PROMPT_END '\n┗━\$ '
+
 function fish_prompt
   set -g RETVAL $status
+  echo -n "┏"
   prompt_status
   prompt_virtual_env
   prompt_user
@@ -308,4 +312,5 @@ function fish_prompt
     end
   end
   prompt_finish
+  echo -n "\n┗━\$"
 end
